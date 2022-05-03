@@ -1,8 +1,11 @@
-## springboot-kafka-producer
 Project has Spring for Apache Kafka.Kafka Producer code.
 
+### modules
+- springboot-kafka-producer
+- invoice-json-data-generator
+
 ### Concepts
-- KafkaTemplate
+- Kafka Template
 - Kafka Producer
 
 ### Tech Stack
@@ -16,9 +19,8 @@ Project has Spring for Apache Kafka.Kafka Producer code.
 - kafka-console-producer --broker-list localhost:9092 --topic users
 - kafka-console-consumer --bootstrap-server localhost:9092 --topic users (console consumer listening on topic first_topic. It will only read new live messages coming.)
 - kafka-console-consumer --bootstrap-server localhost:9092 --topic users --from-beginning --property print.key=true --property key.separator=":"
+- kafka-topics --bootstrap-server localhost:9092 --topic pos-topic --create --partitions 1 --replication-factor 1
+- kafka-console-consumer --bootstrap-server localhost:9092 --topic pos-topic --from-beginning --property print.key=true --property key.separator=":"
 
 ### sample messages
-- {"name": "John Baker" , "age":34, "gender":"male"}
-- {"name": "Chelsea" , "age":34, "gender":"female"}
-- {"name": "Monlisa" , "age":34, "gender":"female"}
-- {"name": "Paul" , "age":48, "gender":"male"}
+- {"topic":"users","key":"101","value":"Kafka is cool"}

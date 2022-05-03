@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: invoice-json-data-generator
+  kafka:
+    producer:
+      client-id: json-pos-simulator
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+application:
+  configs:
+    invoice.count: 60
+    topic.name: pos-topic
