@@ -17,7 +17,7 @@ class AddressGenerator {
     private final DeliveryAddress[] addresses;
 
     public AddressGenerator() {
-        final String DATAFILE = "src/main/resources/data/address.json";
+        final String DATAFILE = "C:\\GitHubRepos\\spring-cloud-kafka-streams\\SpringCloudKafkaStreamsPart2\\invoice-json-data-generator\\src\\main\\resources\\data\\address.json";
         final ObjectMapper mapper;
         random = new Random();
         mapper = new ObjectMapper();

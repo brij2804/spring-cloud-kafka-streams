@@ -17,7 +17,7 @@ class ProductGenerator {
     private final LineItem[] products;
 
     public ProductGenerator() {
-        String DATAFILE = "src/main/resources/data/products.json";
+        String DATAFILE = "C:\\GitHubRepos\\spring-cloud-kafka-streams\\SpringCloudKafkaStreamsPart2\\invoice-json-data-generator\\src\\main\\resources\\data\\products.json";
         ObjectMapper mapper = new ObjectMapper();
         random = new Random();
         qty = new Random();
