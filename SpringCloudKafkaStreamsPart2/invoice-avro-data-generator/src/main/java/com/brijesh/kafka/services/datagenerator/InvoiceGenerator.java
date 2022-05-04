@@ -28,7 +28,7 @@ public class InvoiceGenerator {
     ProductGenerator productGenerator;
 
     public InvoiceGenerator() {
-        String DATAFILE = "C:\\GitHubRepos\\spring-cloud-kafka-streams\\SpringCloudKafkaStreamsPart2\\invoice-avro-data-generator\\target\\generated-sources\\com\\brijesh\\kafka\\model\\PosInvoice.java";
+        String DATAFILE = "C:\\GitHubRepos\\spring-cloud-kafka-streams\\SpringCloudKafkaStreamsPart2\\invoice-avro-data-generator\\src\\main\\resources\\data\\Invoice.json";
         invoiceIndex = new Random();
         invoiceNumber = new Random();
         numberOfItems = new Random();

@@ -26,6 +26,8 @@ Project has Spring for Apache Kafka.Kafka Producer code.
 - kafka-console-consumer --bootstrap-server localhost:9092 --topic users --from-beginning --property print.key=true --property key.separator=":"
 - kafka-topics --bootstrap-server localhost:9092 --topic pos-topic --create --partitions 1 --replication-factor 1
 - kafka-console-consumer --bootstrap-server localhost:9092 --topic pos-topic --from-beginning --property print.key=true --property key.separator=":"
+- kafka-topics --bootstrap-server localhost:9092 --topic avro-pos-topic --create --partitions 1 --replication-factor 1
+- kafka-console-consumer --bootstrap-server localhost:9092 --topic avro-pos-topic --from-beginning --property print.key=true --property key.separator=":"
 
 ### sample messages
 - {"topic":"users","key":"101","value":"Kafka is cool"}
