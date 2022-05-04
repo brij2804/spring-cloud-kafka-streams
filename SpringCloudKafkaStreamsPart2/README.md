@@ -3,16 +3,21 @@ Project has Spring for Apache Kafka.Kafka Producer code.
 ### modules
 - springboot-kafka-producer
 - invoice-json-data-generator
+- invoice-avro-data-generator
 
 ### Concepts
 - Kafka Template
 - Kafka Producer
+- AVRO Schema
 
 ### Tech Stack
 - java17
 - spring-boot-starter-web
 - spring-kafka
 - spring-boot-devtools
+- jackson-databind
+- avro
+- kafka-avro-serializer
 
 ### Kafka commands
 - kafka-topics --bootstrap-server localhost:9092 --topic users --create --partitions 1 --replication-factor 1
